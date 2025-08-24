@@ -185,3 +185,8 @@ fabric.properties
 
  idea folder, uncomment if you don't need it
  .idea
+/.idea/fire-detection-system-using-python-opencv.iml
+/.idea/live_feed_fire_detection.iml
+/.idea/misc.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/vcs.xml
