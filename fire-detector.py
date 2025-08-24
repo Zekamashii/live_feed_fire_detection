@@ -13,7 +13,7 @@ def detect_fire(frame):
     """
     global Fire_Reported
 
-    resized_frame = cv2.resize(frame, (960, 540))
+    resized_frame = cv2.resize(frame, (720, 480))
     blurred = cv2.GaussianBlur(resized_frame, (21, 21), 0)
     hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
 
@@ -36,7 +36,7 @@ def process_webcam_feed():
     """
     Captures live video from the default webcam and performs fire detection in real time.
     """
-    cap = cv2.VideoCapture(0)  # Use 0 for default webcam
+    cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
     if not cap.isOpened():
         print("Error: Could not open webcam.")
         return
