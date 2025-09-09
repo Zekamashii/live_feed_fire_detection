@@ -36,7 +36,7 @@ def process_webcam_feed():
     """
     Captures live video from the default webcam and performs fire detection in real time.
     """
-    cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
+    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
     if not cap.isOpened():
         print("Error: Could not open webcam.")
         return
